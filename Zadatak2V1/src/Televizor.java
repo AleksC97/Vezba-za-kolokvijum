@@ -1,8 +1,8 @@
 
 public class Televizor {
 	private Stanje stanje;
-	private int jacinaZvuka=0;
-	private int trenutniKanal=0;
+	private int jacinaZvuka;
+	private int trenutniKanal;
 	
 	public Televizor() {
 		stanje= Stanje.ISKLJUCEN;
@@ -98,7 +98,7 @@ public class Televizor {
 	}
 	
 	public boolean promeniKanal(int noviKanal) {
-		if(stanje == Stanje.UKLJUCEN && trenutniKanal>10 && trenutniKanal<0) {
+		if(stanje == Stanje.UKLJUCEN && noviKanal<10 && noviKanal>0) {
 			stanje = Stanje.ISKLJUCEN;
 			trenutniKanal = noviKanal;
 			return true;

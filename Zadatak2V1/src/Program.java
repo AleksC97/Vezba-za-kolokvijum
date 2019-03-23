@@ -2,7 +2,7 @@
 public class Program {
 
 	public static void main(String[] args) {
-		Televizor t = new Televizor(Stanje.UKLJUCEN, 5, 3);
+		Televizor t = new Televizor(Stanje.POKVAREN, 5, 3);
 		ispisiTelevizor(t);
 		t.ukljuci();
 		ispisiTelevizor(t);
